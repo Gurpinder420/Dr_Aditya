@@ -1212,7 +1212,7 @@ footer {
     display: none;
     position: fixed;
     top: 0; left: 0; right: 0;
-    height: 90vh;
+    height: 70vh;
     background: rgba(10, 22, 40, 0.97);
     backdrop-filter: blur(20px);
     flex-direction: column;

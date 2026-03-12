@@ -1288,13 +1288,16 @@ footer {
 
   .section-title { font-size: 2rem; }
 }
-
 /* ── Small Mobile: ≤ 400px ─ */
 @media (max-width: 400px) {
   .hero-title { font-size: 2.4rem; }
   .achieve-grid { grid-template-columns: 1fr; }
   .hero-btns { flex-direction: column; align-items: center; }
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+   .hero-badge
+  {
+    font-size: 0.85rem;
+  }
 }
 
 /* ─── SELECTION COLOUR ──────────────────────────────────────── */

@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+  <script>
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+  </script>
+   <div class="faq-item reveal" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            What types of cancer does Sanjivani treat?
+            <span class="faq-toggle"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">We treat a wide range, including: Breast Cancer, GI Cancer, Gynecological Cancers, Head &amp; Neck Cancer, Hepatobiliary Cancer, and offer treatments like HIPEC/PIPEC, Advanced Laparoscopy, Endoscopy, and more.</div>
+          </div>
+          </div>
+<style>
+  .faq-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 400px;
+    padding: 20px;
+  }
+  .faq-toggle {
+    margin-left: 20px;
+    outline: 1px solid rgb(37, 33, 9);
+    padding: 5px;
+    font-weight: bolder;
+    border-radius: 5px;
+  }
+  .faq-answer {
+    display: none;
+  }
+  .faq-item.open .faq-answer {
+    display: block;
+  }
+  .faq-item.open .faq-toggle::before {
+    content: "-";
+  }
+  .faq-toggle::before {
+    content: "+";
+  }
+</style>
+// whatsapp
+ <a href="https://wa.me/918779475032" target="_blank" class="faq-contact-link">
+            <div class="faq-contact-link-icon">💬</div>
+            <div>
+              <!-- <div style="font-size:0.75rem;opacity:0.6">WhatsApp Chat</div>
+              <div style="font-weight:600">Chat on WhatsApp</div> -->
+            </div>
+          </a>
+<style>
+            /* ── WHATSAPP ── */
+    .whatsapp-fab {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 900;
+      width: 56px; height: 56px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+      transition: transform 0.3s;
+      animation: whatsapp-pulse 2s infinite;
+    }
+    @keyframes whatsapp-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .whatsapp-fab:hover { transform: scale(1.1); }
+    </style>
+     </body>
+ </html>

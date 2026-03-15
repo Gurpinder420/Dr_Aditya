@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Best Oncologist Thane | Dr. Aditya Manke – Surgical Oncologist</title>
 <link rel="stylesheet" href="/style.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+   
 <meta name="description" content="Dr. Aditya Manke – Best Oncologist in Thane. Expert in Robotic & Laparoscopic Cancer Surgery, HIPEC. FRCS Edinburgh, FEBS Surgical Oncology. Sanjivani Cancer Centre.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -22,6 +24,7 @@
      <li><a href="#qualifications">Credentials</a></li>
      <li><a href="#hospitals">Hospitals</a></li>
      <li><a href="#testimonials">Testimonials</a></li>
+    
     <li><a href="#contact" class="nav-cta">Book Appointment</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleNav()">
@@ -29,9 +32,11 @@
   </div>
 </nav>
 
+ 
 <!-- HERO -->
 <section class="hero" id="home" style="padding-top:120px">
   <div class="hero-content">
+   
     <div class="hero-badge">Best Oncologist Thane | Virar | Mumbai</div>
     <h1 class="hero-title">
       Dr. Aditya Manke
@@ -79,7 +84,10 @@
     </div>
   </div>
 </section>
-
+<!-- instagram -->
+ <div class="instagram">
+  <a href="https://www.instagram.com/sanjivani_cancer_centre?igsh=cHY2djkyZWNqem51" target="_blank"><i class="ri-instagram-line insta-icon"></i></a>
+</div>
 <!-- CREDENTIALS STRIP -->
 <div class="cred-strip">
   <div class="cred-track" id="credTrack">
@@ -149,6 +157,16 @@
       <div class="spec-title">Robotic Cancer Surgery</div>
       <p class="spec-desc">Certified on Da Vinci &amp; CMR Versius systems. Enables radical resections with nerve preservation and minimal trauma for complex cancers.</p>
     </div>
+     <div class="spec-card reveal">
+            <div class="spec-icon">🎗️</div>  <!-- ribbon for breast cancer awareness -->
+            <div class="spec-title">Breast Conservation</div>
+            <p class="spec-desc">Oncoplastic &amp; skin-sparing techniques. Optimised margins + superior cosmetic results. Sentinel node biopsy, immediate reconstruction available.</p>
+     </div>
+     <div class="spec-card reveal">
+            <div class="spec-icon">👄</div>   <!-- mouth / oral symbol -->
+            <div class="spec-title">Oral &amp; Maxillofacial</div>
+            <p class="spec-desc">Comprehensive resection for oral cavity cancers. Microvascular reconstruction, neck dissection, and functional rehabilitation by head & neck onco-team.</p>
+        </div>
     <div class="spec-card reveal reveal-delay-1">
       <div class="spec-icon">🔬</div>
       <div class="spec-title">Laparoscopic Onco Surgery</div>
@@ -203,6 +221,18 @@
       <img src="./images/care-bed.jpg" alt="Patient Care Ward">
       <div class="gallery-overlay"><span class="gallery-overlay-txt">Post-Op Care Unit</span></div>
     </div>
+     <div class="gallery-item1">
+      <img src="./images/clinic1.jpeg" alt="Patient Care Ward">
+      <div class="gallery-overlay"><span class="gallery-overlay-txt">Post-Op Care Unit</span></div>
+    </div>
+     <div class="gallery-item1">
+      <img src="./images/clinic2.jpeg" alt="Patient Care Ward">
+      <div class="gallery-overlay"><span class="gallery-overlay-txt">Post-Op Care Unit</span></div>
+    </div>
+    <div class="gallery-item1">
+      <img src="./images/patients.jpg" alt="Patient Care Ward">
+      <div class="gallery-overlay"><span class="gallery-overlay-txt">Post-Op Care Unit</span></div>
+    </div>
   </div>
 </section>
 <!-- qualifications -->
@@ -214,11 +244,17 @@
       <p class="section-sub">Dr. Aditya Manke holds an exceptional combination of Indian and international qualifications, representing the pinnacle of surgical oncology training.</p>
     </div>
     <div class="quals-grid">
-      <div class="qual-item reveal">
+      <div class="qual-item reveal" onclick="toggleQual(this)">
         <div class="qual-bullet"></div>
         <div class="qual-text">
           <strong>MBBS – 2008</strong>
           Grant Medical College & Sir J.J. Group of Hospitals, Mumbai
+          <span class="qual-toggle"></span>
+        </div>
+        <div class="qual-open">
+          <div class="inner-data">
+          <img src="./images/about.png" alt="" srcset="">
+          </div>
         </div>
       </div>
       <div class="qual-item reveal">
@@ -399,7 +435,7 @@
         <div class="ci-icon">📍</div>
         <div>
           <div class="ci-label">Clinic Address</div>
-          <div class="ci-val">1st Floor Rajesh CHS, Near Vandana ST Stand,<br>Naupada, Thane West – 400 602</div>
+          <div class="ci-val"> 501,502, Platinum Square, Ghantali Devi Rd,<br> Naupada, Thane West, Thane,<br> Maharashtra 400602</div>
         </div>
       </div>
       <div class="contact-info-item">
@@ -420,7 +456,7 @@
         <div class="ci-icon">✉️</div>
         <div>
           <div class="ci-label">Email</div>
-          <div class="ci-val">adityamanke@gmail.com</div>
+          <div class="ci-val">sanjivanicancercare09@gmail.com</div>
         </div>
       </div>
       <div class="contact-info-item">
@@ -519,6 +555,8 @@
   </div>
 </footer>
 
+
+
 <script>
   // Nav hamburger
   function toggleNav() {
@@ -573,6 +611,12 @@
     });
   }, { threshold: 0.5 });
   document.querySelectorAll('.achieve-num, .stat-num').forEach(el => counterObs.observe(el));
+  // qualification
+   function toggleQual(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.qual-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
 </script>
 </body>
 </html>

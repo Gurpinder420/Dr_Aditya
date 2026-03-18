@@ -704,6 +704,12 @@ section {
 .gallery-item1
 {
   height: 300px;
+  
+}
+.gallery-item1 img
+{
+  border-radius: 10px;
+  
 }
 
 /* ─── QUALIFICATIONS ────────────────────────────────────────── */
@@ -1002,6 +1008,7 @@ section {
   color: var(--gold);
   font-weight: 700;
   margin-bottom: 0.2rem;
+ 
 }
 .ci-val {
   font-size: 0.9rem;
